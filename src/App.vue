@@ -5,7 +5,7 @@ import { reactive } from 'vue';
 const sales: SaleData[] = reactive([]);
 
 const sheetId = '1WGatv0ZhLyU9Dq7TKwLZS0rU6SZCbnmKQnQIX1AEpGo';
-const parser = new PublicGoogleSheetsParser(sheetId, { useFormat: true });
+const parser = new PublicGoogleSheetsParser(sheetId, { useFormat: true } as any);
 parser.parse().then((data) => {
   const keys = {
     'name': 'מכירה',
