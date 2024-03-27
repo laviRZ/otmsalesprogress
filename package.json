@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jewish-date": "^2.0.10",
+    "public-google-sheets-parser": "^1.5.3",
     "vue": "^3.4.21"
   },
   "devDependencies": {
