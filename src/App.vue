@@ -16,7 +16,8 @@ parser.parse().then((data) => {
     'buyer': 'קונה',
     'end': 'תאריך סיום'
   }
-  data = data.map((row) => ({
+  data = data.filter((row) => [keys.end, keys.target, keys.progress].every((key) => key in row))
+  .map((row) => ({
     name: row[keys.name],
     target: row[keys.target],
     currency: row[keys.currency],
